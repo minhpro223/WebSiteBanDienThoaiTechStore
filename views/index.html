@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar" style="border-top: 4px solid #2563eb;">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <i class="fa-solid fa-mobile-screen-button"></i> TechStore
+            </a>
+
+            <div class="search-bar-wrapper">
+                <select id="brandSelect" class="search-category-select">
+                    <option value="all">Tất cả</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="oppo">OPPO</option>
+                    <option value="vivo">Vivo</option>
+                </select>
+                <input type="text" id="productSearch" placeholder="Bạn cần tìm sản phẩm gì?">
+                <button class="search-btn" aria-label="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="nav-actions">
+                <a href="admin.html" class="nav-action-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Admin</span>
+                </a>
+                <button id="cartBtn" class="nav-action-item">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Giỏ hàng</span>
+                    <span id="cartCountBadge" class="badge">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sub-navbar">
+        <div class="container sub-nav-content">
+            <button class="category-menu-btn">
+                <i class="fa-solid fa-bars"></i> Danh mục sản phẩm
+            </button>
+            <div class="sub-nav-links">
+                <a href="#" class="sub-nav-link active" data-brand="all">Tất cả</a>
+                <a href="#" class="sub-nav-link" data-brand="iphone">iPhone</a>
+                <a href="#" class="sub-nav-link" data-brand="samsung">Samsung</a>
+                <a href="#" class="sub-nav-link" data-brand="xiaomi">Xiaomi</a>
+                <a href="#" class="sub-nav-link" data-brand="oppo">OPPO</a>
+                <a href="#" class="sub-nav-link" data-brand="vivo">Vivo</a>
+            </div>
+            <div style="width: 100px;"></div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="hero-section-grid">
+            <aside class="category-sidebar">
+                <div class="sidebar-header">
+                    <i class="fa-solid fa-bars-staggered"></i> Danh mục
+                </div>
+                <ul class="sidebar-links">
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-mobile-screen"></i> Điện thoại</a></li>
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-tablet-screen-button"></i> Tablet</a>
+                    </li>
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-headphones"></i> Tai nghe</a></li>
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-plug"></i> Sạc dự phòng</a></li>
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-bolt"></i> Cáp - Sạc</a></li>
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-mobile-retro"></i> Ốp lưng</a></li>
+                    <li><a href="#" class="sidebar-link"><i class="fa-solid fa-square-minus"></i> Dán màn hình</a></li>
+                </ul>
+            </aside>
+
+            <section class="hero-banner">
+                <div class="hero-content">
+                    <h2>iPhone 15 Pro</h2>
+                    <h1>Titan. Mạnh mẽ. Đột phá.</h1>
+                    <p>Giá chỉ từ 28.990.000đ</p>
+                    <a href="#products-section" class="hero-btn">
+                        Mua ngay <i class="fa-solid fa-chevron-right" style="margin-left: 6px; font-size: 11px;"></i>
+                    </a>
+                </div>
+                <img class="hero-image" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500"
+                    alt="iPhone 15 Pro Max">
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+        </div>
+
+        <section class="trust-badges-row">
+            <div class="trust-badge-card">
+                <i class="fa-solid fa-truck-moving"></i>
+                <div class="badge-info">
+                    <h4>Giao hàng miễn phí</h4>
+                    <p>Toàn quốc</p>
+                </div>
+            </div>
+            <div class="trust-badge-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div class="badge-info">
+                    <h4>Bảo hành chính hãng</h4>
+                    <p>12 tháng 1 đổi 1</p>
+                </div>
+            </div>
+            <div class="trust-badge-card">
+                <i class="fa-solid fa-rotate-left"></i>
+                <div class="badge-info">
+                    <h4>Đổi trả dễ dàng</h4>
+                    <p>Trong 7 ngày</p>
+                </div>
+            </div>
+            <div class="trust-badge-card">
+                <i class="fa-solid fa-face-smile"></i>
+                <div class="badge-info">
+                    <h4>Giá tốt mỗi ngày</h4>
+                    <p>Cam kết tốt nhất</p>
+                </div>
+            </div>
+            <div class="trust-badge-card">
+                <i class="fa-solid fa-headset"></i>
+                <div class="badge-info">
+                    <h4>Hỗ trợ 24/7</h4>
+                    <p>1900 1234</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <div class="section-title">Thương hiệu nổi bật</div>
+                <a href="#" class="see-all-link">Xem tất cả <i class="fa-solid fa-chevron-right"
+                        style="font-size: 11px;"></i></a>
+            </div>
+            <div class="brand-logos-grid" id="brandLogosGrid">
+                <div class="brand-logo-card active" data-brand="all">Tất cả</div>
+                <div class="brand-logo-card" data-brand="iphone">Apple</div>
+                <div class="brand-logo-card" data-brand="samsung">Samsung</div>
+                <div class="brand-logo-card" data-brand="xiaomi">Xiaomi</div>
+                <div class="brand-logo-card" data-brand="oppo">Oppo</div>
+                <div class="brand-logo-card" data-brand="vivo">Vivo</div>
+                <div class="brand-logo-card" data-brand="realme">Realme</div>
+            </div>
+        </section>
+
+        <section id="products-section">
+            <div class="section-header">
+                <div class="section-title">Danh sách sản phẩm</div>
+                <a href="#" class="see-all-link">Xem tất cả <i class="fa-solid fa-chevron-right"
+                        style="font-size: 11px;"></i></a>
+            </div>
+
+            <div id="loadingSpinner" style="display: none; text-align: center; padding: 40px 0;">
+                <i class="fa-solid fa-spinner fa-spin fa-2x" style="color: #2563eb;"></i>
+                <p style="margin-top: 10px; color: #64748b;">Đang tải sản phẩm...</p>
+            </div>
+
+            <div id="productGrid" class="product-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>TechStore</h3>
+                    <p>Hệ thống bán lẻ điện thoại di động, máy tính bảng và phụ kiện chính hãng công nghệ hàng đầu Việt
+                        Nam.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Mua Sắm Online</h4>
+                    <ul>
+                        <li><a href="#">Điện thoại nổi bật</a></li>
+                        <li><a href="#">Apple iPhone chính hãng</a></li>
+                        <li><a href="#">Samsung Galaxy cao cấp</a></li>
+                        <li><a href="#">Chương trình ưu đãi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Hỗ Trợ Khách Hàng</h4>
+                    <ul>
+                        <li><a href="#">Liên hệ hỗ trợ</a></li>
+                        <li><a href="#">Quy định & Điều khoản</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; @TechStore.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartDrawerOverlay" class="cart-drawer-overlay"></div>
+    <aside id="cartDrawer" class="cart-drawer">
+        <div class="drawer-header">
+            <h2><i class="fa-solid fa-bag-shopping"></i> Giỏ hàng mua sắm</h2>
+            <button id="closeCartBtn" class="close-drawer"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cartItemsList" class="drawer-body">
+        </div>
+        <div class="drawer-footer">
+            <div class="summary-row">
+                <span>Tổng tiền hàng:</span>
+                <span id="cartTotalPrice" class="total-price">0đ</span>
+            </div>
+            <button id="checkoutBtn" class="btn btn-primary checkout-btn">
+                <i class="fa-solid fa-credit-card"></i> Tiến hành thanh toán
+            </button>
+        </div>
+    </aside>
+
+    <div id="detailsModalOverlay" class="details-modal-overlay">
+        <div class="details-modal-container">
+            <header class="details-modal-header">
+                <h2 id="detailsName">Chi tiết sản phẩm</h2>
+                <button id="closeDetailsBtn" class="close-details"><i class="fa-solid fa-xmark"></i></button>
+            </header>
+            <div class="details-modal-body">
+                <div class="details-image-section">
+                    <img id="detailsImg" src="" alt="Hình ảnh sản phẩm">
+                </div>
+                <div class="details-info-section">
+                    <span id="detailsBrandBadge" class="details-brand-badge">Nhãn hiệu</span>
+                    <p id="detailsDesc" class="details-description"></p>
+                    <div class="details-specs-grid">
+                        <div class="spec-item">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div class="spec-label">Màn hình</div>
+                            <div id="detailsScreen" class="spec-value">N/A</div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fa-solid fa-camera"></i>
+                            <div class="spec-label">Camera sau</div>
+                            <div id="detailsBackCamera" class="spec-value">N/A</div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fa-solid fa-camera-rotate"></i>
+                            <div class="spec-label">Camera trước</div>
+                            <div id="detailsFrontCamera" class="spec-value">N/A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="details-modal-footer">
+                <div class="details-price-tag">Giá bán: <span id="detailsPrice">0đ</span></div>
+                <button id="detailsAddToCartBtn" class="btn btn-primary">
+                    <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script type="module" src="../app/controllers/customerController.js"></script>
+</body>
+
+</html>

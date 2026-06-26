@@ -1,0 +1,15 @@
+{
+  "name": "capstone-sass",
+  "version": "1.0.0",
+  "description": "Capstone Project - JS, SASS, HTML & CSS",
+  "main": "app/controllers/customerController.js",
+  "scripts": {
+    "sass:build": "sass assets/sass/main.scss assets/css/main.css --no-source-map",
+    "sass:watch": "sass --watch assets/sass/main.scss assets/css/main.css --no-source-map",
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.72.0"
+  }
+}
